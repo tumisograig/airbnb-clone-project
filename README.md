@@ -35,11 +35,6 @@ Welcome to the **Airbnb Clone Project**! This project is a capstone initiative d
 - `/backend` – Backend APIs and services
 - `/mobile` – React Native mobile app
 
-## ✅ Status
-
-Project setup in progress. Stay tuned for upcoming commits!
-Objective: Understand the various roles within the project team.
-
 ## 👥 Team Roles
 
 In a full-stack development project like the Airbnb Clone, team members may assume specific roles based on their strengths and learning goals. Each role plays a crucial part in delivering a robust, functional product. Below are the primary roles and their responsibilities:
@@ -98,7 +93,6 @@ Used for scripting and automation, such as setting
 
 A full-stack web application that replicates core functionalities of Airbnb — allowing users to list, browse, book, and review rental properties. This project is built as part of a software engineering program to gain hands-on experience with real-world web development tools and best practices.
 
----
 
 ## 🎯 Project Goals
 
@@ -175,7 +169,6 @@ A full-stack web application that replicates core functionalities of Airbnb — 
 - A **review** is written by a **user** for a **property**.
 - A **payment** is tied to a **booking**.
 
----
 
 ## 🧩 Feature Breakdown
 
@@ -199,6 +192,7 @@ Users can search properties by location, price, and date. Filters help tailor th
 
 **7. Admin Dashboard (optional)**  
 Admins can monitor platform activity, moderate content, and resolve issues.
+
 ## 🔐 API Security
 
 Security is a foundational aspect of the Airbnb Clone project. Protecting user data, ensuring safe transactions, and maintaining platform integrity are all dependent on robust backend API security. Below are the key measures we will implement:
