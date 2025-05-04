@@ -199,6 +199,46 @@ Users can search properties by location, price, and date. Filters help tailor th
 
 **7. Admin Dashboard (optional)**  
 Admins can monitor platform activity, moderate content, and resolve issues.
+## 🔐 API Security
+
+Security is a foundational aspect of the Airbnb Clone project. Protecting user data, ensuring safe transactions, and maintaining platform integrity are all dependent on robust backend API security. Below are the key measures we will implement:
+
+### Key Security Measures
+
+- **Authentication**:  
+  We will use secure token-based authentication (e.g., JWT) to verify the identity of users accessing the system. This ensures that only registered users can access protected routes.
+
+- **Authorization**:  
+  Role-based access control will ensure users can only perform actions relevant to their permissions. For example, only hosts can list properties, and only guests can book them.
+
+- **Rate Limiting**:  
+  To prevent brute-force attacks and abuse, we’ll implement rate limiting on API endpoints. This restricts the number of requests a user can make in a given timeframe.
+
+- **Input Validation and Sanitization**:  
+  All incoming data will be validated and sanitized to prevent common vulnerabilities like SQL Injection and XSS (Cross-Site Scripting).
+
+- **HTTPS Encryption**:  
+  All data transfers between client and server will be encrypted using HTTPS to prevent data interception.
+
+- **Secure Payment Processing**:  
+  Integration with a trusted third-party payment gateway will handle all financial transactions, ensuring PCI compliance and fraud prevention.
+
+### Why Security Matters
+
+- **User Data Protection**:  
+  Email addresses, passwords, and personal booking details must remain private and secure to build user trust.
+
+- **Platform Integrity**:  
+  Unauthorized access or manipulation could undermine the system’s functionality and reputation.
+
+- **Financial Safety**:  
+  Payment data is especially sensitive; any breach could lead to fraud, legal issues, and loss of user confidence.
+
+- **Compliance**:  
+  Implementing proper security measures ensures compliance with data protection laws and industry best practices.
+
+By integrating these security protocols early in development, we ensure a safe and scalable application for all users.
+
 
 
 
