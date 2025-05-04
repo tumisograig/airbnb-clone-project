@@ -94,3 +94,111 @@ A framework for building cross-platform mobile applications using JavaScript and
 ### 🐚 Shell / Bash
 Used for scripting and automation, such as setting
 
+# Airbnb Clone Project
+
+A full-stack web application that replicates core functionalities of Airbnb — allowing users to list, browse, book, and review rental properties. This project is built as part of a software engineering program to gain hands-on experience with real-world web development tools and best practices.
+
+---
+
+## 🎯 Project Goals
+
+- Build a responsive and user-friendly web platform for rental listings.
+- Implement secure user authentication and role-based access.
+- Enable seamless booking, payment, and review functionalities.
+- Practice full-stack development with modern tools and collaboration practices.
+
+---
+
+## 👥 Team Roles
+
+- **Backend Developer**: Responsible for designing and developing RESTful APIs and business logic using Django.
+- **Frontend Developer**: Builds the user interface and ensures responsiveness and user experience.
+- **Database Administrator**: Designs and manages the PostgreSQL database structure, relationships, and performance.
+- **DevOps Engineer**: Manages deployment pipelines, CI/CD workflows, and cloud infrastructure.
+- **Product Manager**: Coordinates team efforts, sets timelines, and ensures features align with project goals.
+
+---
+
+## 🧰 Technology Stack
+
+- **Django**: A Python-based web framework used for building backend APIs and handling authentication and routing.
+- **PostgreSQL**: A relational database system used to store and manage application data such as users, bookings, and properties.
+- **GraphQL**: A query language for APIs to fetch only the data needed by the client.
+- **HTML/CSS/JavaScript**: Used for frontend development and user interaction.
+- **React (optional)**: A modern JavaScript library for building reactive UI components.
+- **Docker**: Used to containerize the application for easy deployment and environment consistency.
+
+---
+
+## 🗃️ Database Design
+
+### Entities & Key Fields
+
+- **Users**
+  - `id`: Unique identifier
+  - `username`: User's login name
+  - `email`: Contact email
+  - `password`: Hashed password
+  - `role`: Guest or Host
+
+- **Properties**
+  - `id`: Unique property ID
+  - `title`: Name of the property
+  - `description`: Details about the property
+  - `location`: City or address
+  - `host_id`: Linked to a user (host)
+
+- **Bookings**
+  - `id`: Booking ID
+  - `user_id`: Linked to the guest
+  - `property_id`: Linked to the property
+  - `start_date`: Booking start
+  - `end_date`: Booking end
+
+- **Reviews**
+  - `id`: Review ID
+  - `user_id`: Reviewer
+  - `property_id`: Reviewed property
+  - `rating`: Numerical score
+  - `comment`: Text feedback
+
+- **Payments**
+  - `id`: Transaction ID
+  - `booking_id`: Related booking
+  - `amount`: Payment amount
+  - `status`: Paid, pending, or failed
+
+### Relationships
+
+- A **user** can have multiple **properties** (if they’re a host).
+- A **booking** belongs to one **user** and one **property**.
+- A **review** is written by a **user** for a **property**.
+- A **payment** is tied to a **booking**.
+
+---
+
+## 🧩 Feature Breakdown
+
+**1. User Management**  
+Allows users to register, log in, and manage profiles. Depending on their role, users can either book properties or list them for rent.
+
+**2. Property Management**  
+Hosts can add, update, or remove property listings, set availability, pricing, and upload images.
+
+**3. Booking System**  
+Enables guests to check availability and book properties securely. Confirms and tracks booking details for both parties.
+
+**4. Reviews and Ratings**  
+After each stay, guests can leave feedback. Ratings influence property visibility and trust.
+
+**5. Payment Integration**  
+Processes payments securely via an integrated payment gateway, ensuring smooth transactions.
+
+**6. Search and Filter Functionality**  
+Users can search properties by location, price, and date. Filters help tailor the results.
+
+**7. Admin Dashboard (optional)**  
+Admins can monitor platform activity, moderate content, and resolve issues.
+
+
+
