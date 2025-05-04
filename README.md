@@ -72,4 +72,25 @@ Implements the mobile version of the Airbnb Clone using React Native. Ensures pe
 Focuses on securing the app against vulnerabilities like SQL injection, XSS, and unauthorized access. Monitors logs, implements security patches, and performs audits.
 
 ---
+## 🧰 Technology Stack
+
+This Airbnb Clone project leverages a modern full-stack architecture to build scalable, maintainable, and user-friendly applications. Below is a breakdown of the technologies used and their roles:
+
+### 🐍 Django
+A high-level Python web framework that encourages rapid development and clean, pragmatic design. In this project, Django is used to build the backend logic, manage authentication, and expose RESTful API endpoints.
+
+### 🐘 PostgreSQL
+An open-source relational database management system. PostgreSQL is used to store and manage all persistent data including users, bookings, listings, and reviews.
+
+### ⚛️ React
+A JavaScript library for building user interfaces. React powers the frontend of the application, enabling dynamic and responsive UI components for seamless user interaction.
+
+### ⚡ TypeScript
+A statically typed superset of JavaScript that enhances code quality and developer productivity. Used alongside React for safer and more predictable frontend development.
+
+### 📱 React Native
+A framework for building cross-platform mobile applications using JavaScript and React. Enables the development of a native mobile version of the Airbnb Clone for both iOS and Android platforms.
+
+### 🐚 Shell / Bash
+Used for scripting and automation, such as setting
 
